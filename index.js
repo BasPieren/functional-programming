@@ -32,9 +32,10 @@ client.get('search', {
 })
 // END USE OF SOURCE
 
+  .then(data => JSON.parse(data))
   // START USE OF SOURCE: Martijn Reeuwijk
   .then(data =>
-    JSON.parse(data).aquabrowser.results.result.forEach(function(e){
+    data.aquabrowser.results.result.forEach(function(e){
       console.log(
         // START USE OF SOURCE: https://stackoverflow.com/questions/16470113/how-to-return-part-of-string-after-a-certain-character
         "Titel: ".toUpperCase() + e.titles.title['search-term'].substring(0, e.titles.title['search-term'].indexOf("/")) + "\n"
