@@ -1,5 +1,3 @@
-require('dotenv').config()
-
 /* ------ SOURCES
 
 https://github.com/rijkvanzanten/node-oba-api
@@ -7,6 +5,8 @@ https://stackoverflow.com/questions/16470113/how-to-return-part-of-string-after-
 Martijn Reeuwijk
 
 ------ */
+
+require('dotenv').config()
 
 // START USE OF SOURCE: https://github.com/rijkvanzanten/node-oba-api
 const OBA = require('oba-api');
@@ -37,14 +37,16 @@ client.get('search', {
   .then(results =>
     console.log(
       JSON.parse(results).aquabrowser.results.result.forEach(function(e){
-        console.log(e
+        console.log(
           // START USE OF SOURCE: https://stackoverflow.com/questions/16470113/how-to-return-part-of-string-after-a-certain-character
-          .titles.title['search-term'].substring(0, e.titles.title['search-term'].indexOf("/")) + "\n"
+          "Titel: ".toUpperCase() + e.titles.title['search-term'].substring(0, e.titles.title['search-term'].indexOf("/")) + "\n"
           // END USE OF SOURCE
           .concat("Jaar: ".toUpperCase() + e.publication.year['search-term']) + "\n"
           .concat("Auteur: ".toUpperCase() + e.authors['main-author']['search-term']) + "\n"
+          .concat("Onderwerp: ".toUpperCase() + e.subjects['topical-subject']['search-term']) + "\n"
           .concat("Omschrijving: ".toUpperCase() + e.summaries.summary['$t']) + "\n"
-          .concat("Soort: ".toUpperCase() + e.formats.format['search-term']) + "\n"  + "---"
+          .concat("Paginas: ".toUpperCase() + e.description['physical-description']['$t'].substring(0, e.description['physical-description']['$t'].indexOf("p"))) + "\n"
+          .concat("Soort: ".toUpperCase() + e.formats.format['search-term']) + "\n"  + "------------"
         )
 
       })
