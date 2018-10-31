@@ -40,6 +40,8 @@ client.get('search', {
   })
   // END USE OF SOURCE
 
+  .catch(err => console.log(err)) // Something went wrong in the request to the API
+
   function getData(data) {
     data.aquabrowser.results.result.forEach(function(e){
       console.log(
@@ -55,5 +57,3 @@ client.get('search', {
       )
     })
   }
-
-  .catch(err => console.log(err)) // Something went wrong in the request to the API
