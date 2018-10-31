@@ -3,6 +3,7 @@
 https://github.com/rijkvanzanten/node-oba-api
 https://stackoverflow.com/questions/16470113/how-to-return-part-of-string-after-a-certain-character
 Martijn Reeuwijk
+Laurens
 
 ------ */
 
@@ -32,9 +33,14 @@ client.get('search', {
 })
 // END USE OF SOURCE
 
-  .then(data => JSON.parse(data))
+  .then(result => JSON.parse(result))
   // START USE OF SOURCE: Martijn Reeuwijk
-  .then(data =>
+  .then(result => {
+    let keys = getData(result)
+  })
+  // END USE OF SOURCE
+
+  function getData(data) {
     data.aquabrowser.results.result.forEach(function(e){
       console.log(
         // START USE OF SOURCE: https://stackoverflow.com/questions/16470113/how-to-return-part-of-string-after-a-certain-character
@@ -48,7 +54,6 @@ client.get('search', {
         .concat("Soort: ".toUpperCase() + e.formats.format['search-term']) + "\n"  + "------------"
       )
     })
-  )
-  // END USE OF SOURCE
+  }
 
   .catch(err => console.log(err)) // Something went wrong in the request to the API
