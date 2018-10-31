@@ -1,0 +1,25 @@
+{
+  "name": "functional-programming",
+  "version": "1.0.0",
+  "description": "This is the repo for my functional programming project.",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^6.1.0",
+    "oba-api": "github:rijkvanzanten/node-oba-api"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BasPieren/functional-programming.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BasPieren/functional-programming/issues"
+  },
+  "homepage": "https://github.com/BasPieren/functional-programming#readme"
+}

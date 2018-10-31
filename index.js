@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 /* ------ SOURCES
 
 https://github.com/rijkvanzanten/node-oba-api
@@ -12,8 +14,8 @@ const OBA = require('oba-api');
 // Setup authentication to api server
 const client = new OBA({
   // ProQuest API Keys
-  public: '1e19898c87464e239192c8bfe422f280',
-  secret: '4289fec4e962a33118340c888699438d'
+  public: process.env.PUBLIC,
+  secret: process.env.SECRET
 });
 
 // General usage:
@@ -35,10 +37,9 @@ client.get('search', {
   .then(results =>
     console.log(
       JSON.parse(results).aquabrowser.results.result.forEach(function(e){
-        console.log(
-
+        console.log(e
           // START USE OF SOURCE: https://stackoverflow.com/questions/16470113/how-to-return-part-of-string-after-a-certain-character
-          e.titles.title['search-term'].substring(0, e.titles.title['search-term'].indexOf("/")) + "\n"
+          .titles.title['search-term'].substring(0, e.titles.title['search-term'].indexOf("/")) + "\n"
           // END USE OF SOURCE
           .concat("Jaar: ".toUpperCase() + e.publication.year['search-term']) + "\n"
           .concat("Auteur: ".toUpperCase() + e.authors['main-author']['search-term']) + "\n"
