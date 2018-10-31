@@ -28,31 +28,26 @@ const client = new OBA({
 // Example search to the word 'rijk' sorted by title:
 client.get('search', {
   q: 'Nederland',
-  sort: 'title'
+  sort: 'title',
 })
 // END USE OF SOURCE
 
   // START USE OF SOURCE: Martijn Reeuwijk
-
-  .then(results =>
-    console.log(
-      JSON.parse(results).aquabrowser.results.result.forEach(function(e){
-        console.log(
-          // START USE OF SOURCE: https://stackoverflow.com/questions/16470113/how-to-return-part-of-string-after-a-certain-character
-          "Titel: ".toUpperCase() + e.titles.title['search-term'].substring(0, e.titles.title['search-term'].indexOf("/")) + "\n"
-          // END USE OF SOURCE
-          .concat("Jaar: ".toUpperCase() + e.publication.year['search-term']) + "\n"
-          .concat("Auteur: ".toUpperCase() + e.authors['main-author']['search-term']) + "\n"
-          .concat("Onderwerp: ".toUpperCase() + e.subjects['topical-subject']['search-term']) + "\n"
-          .concat("Omschrijving: ".toUpperCase() + e.summaries.summary['$t']) + "\n"
-          .concat("Paginas: ".toUpperCase() + e.description['physical-description']['$t'].substring(0, e.description['physical-description']['$t'].indexOf("p"))) + "\n"
-          .concat("Soort: ".toUpperCase() + e.formats.format['search-term']) + "\n"  + "------------"
-        )
-
-      })
-    )
+  .then(data =>
+    JSON.parse(data).aquabrowser.results.result.forEach(function(e){
+      console.log(
+        // START USE OF SOURCE: https://stackoverflow.com/questions/16470113/how-to-return-part-of-string-after-a-certain-character
+        "Titel: ".toUpperCase() + e.titles.title['search-term'].substring(0, e.titles.title['search-term'].indexOf("/")) + "\n"
+        // END USE OF SOURCE
+        .concat("Jaar: ".toUpperCase() + e.publication.year['search-term']) + "\n"
+        .concat("Auteur: ".toUpperCase() + e.authors['main-author']['search-term']) + "\n"
+        .concat("Onderwerp: ".toUpperCase() + e.subjects['topical-subject']['search-term']) + "\n"
+        .concat("Omschrijving: ".toUpperCase() + e.summaries.summary['$t']) + "\n"
+        .concat("Paginas: ".toUpperCase() + e.description['physical-description']['$t'].substring(0, e.description['physical-description']['$t'].indexOf("p"))) + "\n"
+        .concat("Soort: ".toUpperCase() + e.formats.format['search-term']) + "\n"  + "------------"
+      )
+    })
   )
-
   // END USE OF SOURCE
 
   .catch(err => console.log(err)) // Something went wrong in the request to the API
