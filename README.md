@@ -149,7 +149,15 @@ But I still found the part about the "cheerful genres" to still be a bit to abst
 **Have there been noticeable changes in genres that have been used in the period after World War 2?**
 
 ### Sub-questions
-After I finalized my research question I started to write down sub-questions about things I wanted to know.
+After I finalized my research question I started to write down sub-questions about things I wanted to know:
+
+- Which genres are most commonly used 5 years after World War 2?
+- Which genres are most commonly used during World War 2?
+- Have genres been added after World War 2?
+- Who wrote books after World War 2?
+- Who wrote books during World War 2?
+- What where the books about after World War 2?
+- What where the books about during World War 2?
 
 ### Variables
 
