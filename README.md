@@ -56,7 +56,6 @@ This is the research I have done in the first week of the project.
 First after getting back the data from the [OBA API](https://zoeken.oba.nl/api/v1/) I looked through the data to see what kind of values it was holding. The data was structured somewhat like this:
 
 <details><summary>Data Structure</summary>
-
 <ul>
 <li>id</li>
 <li>frabl</li>
@@ -126,7 +125,6 @@ First after getting back the data from the [OBA API](https://zoeken.oba.nl/api/v
   <li>undup-info</li>
   </ul>
 </ul>
-
 </details>
 
 <br>
