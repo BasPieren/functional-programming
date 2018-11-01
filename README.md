@@ -53,7 +53,7 @@ This project makes use of the following packages and technologies:
 This is the research I have done in the first week of the project.
 
 ### Data
-First after getting back the data from the [OBA API](https://zoeken.oba.nl/api/v1/) I started to look through the data to see what kind of values it was holding. The data was structured somewhat like this:
+First after getting back the data from the [OBA API](https://zoeken.oba.nl/api/v1/) I looked through the data to see what kind of values it was holding. The data was structured somewhat like this:
 
 <details><summary>Data Structure</summary>
 
@@ -130,7 +130,7 @@ First after getting back the data from the [OBA API](https://zoeken.oba.nl/api/v
 </details>
 
 <br>
-After I had access to the data I started to look through all the data for things I could use for my project like the title, writer, genre and publication date of books. Quickly I saw that there was a lot of excess data that was not really needed.
+I went looking for variables that I could use for my project. I expected to find variables like: title, writer, genre and publication date of books. Quickly I saw that there was a lot of excess data that was not really needed.
 
 ### Research questions
 After exploring the data I came up with the following research questions:
@@ -141,13 +141,11 @@ After exploring the data I came up with the following research questions:
 4.	Have there been fewer books written about faith / religion through the course of the years?
 5.	Do men and women often continue to write within the same kind of genres?
 
-These where things I thought that would be interesting to know and that could be found inside the data. Out of all these questions I choose the one that I found the most interesting.
-
-I choose the following question:
+These where things I thought that would be interesting to know and that was based on variables that could be found inside the data. Out of all these questions I choose the one that I found the most interesting:
 
 **Have more "cheerful" genres been used in the period after 1940-1945?**
 
-But I still found the part about the "cheerful genres" to still be a bit to abstract and vague. So I made an iteration on it.
+But I still found the part about the "cheerful genres" to still be a bit to abstract and vague. So I made an iteration on it:
 
 **Have there been noticeable changes in genres that have been used in the period after World War 2?**
 
@@ -157,15 +155,17 @@ After I formulated my research questions I came up with a hypothesis that I want
 - **"After World War 2 books have drastically changed in genre to reflect the time period."**
 
 ### Sub-questions
-After I finalized my research question I started to write down sub-questions about things I wanted to know:
+After I finalized my research question and hypothesis I started to write down sub-questions about things I wanted to know about:
 
 - Which genres are most commonly used 5 years after World War 2?
 - Which genres are most commonly used during World War 2?
 - Have genres been added after World War 2?
 - Who wrote books after World War 2?
 - Who wrote books during World War 2?
-- What where the books about after World War 2?
-- What where the books about during World War 2?
+- What where books about after World War 2?
+- What where books about during World War 2?
+
+I wanted to focus on the period during and after World War 2 so that I would have a base that I could use to compare my hypothesis to.
 
 ### Variables
 After I wrote down my sub-questions I started to write down the variables inside the data that I thought I would need to find patterns. I came up with the following:
@@ -176,6 +176,8 @@ After I wrote down my sub-questions I started to write down the variables inside
 - Publication Year
 - Pages
 - Subjects
+
+I made sure that I would only get back these variables when searching trough the data.
 
 ### Findings
 
