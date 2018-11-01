@@ -39,6 +39,21 @@ This project makes use of the following packages and technologies:
 * [dotenv](https://www.npmjs.com/package/dotenv)
 
 ## Research 📑
+This is the research I have done in the first week of the project.
+
+### Data
+
+
+### Research questions
+
+
+### Sub-questions
+
+
+### Variables
+
+
+### Findings
 
 
 ## Sources 📚
