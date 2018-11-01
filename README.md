@@ -6,6 +6,7 @@ This is the repo for my functional programming project.
 * [To Do](#to-do)
 * [Description](#description)
 * [Installing](#installing)
+* [Research](#research)
 * [Sources](#sources)
 * [Licence](#licence)
 
@@ -22,10 +23,29 @@ This is a list of things in want to do in this project.
 
 
 ## Installing 🔍
+To install this application enter the following into your terminal:
+```
+git clone https://github.com/BasPieren/functional-programming.git
+
+cd functional-programming
+
+npm install
+```
+
+### Packages and technologies
+This project makes use of the following packages and technologies:
+
+* [node-oba-api](https://github.com/rijkvanzanten/node-oba-api)
+* [dotenv](https://www.npmjs.com/package/dotenv)
+
+## Research 📑
 
 
 ## Sources 📚
 
+* [Rijk van zanten node-oba-api](https://github.com/rijkvanzanten/node-oba-api)
+* [How to return part of string after a certain character?](https://stackoverflow.com/questions/16470113/how-to-return-part-of-string-after-a-certain-character)
+* [Code provided by Martijn Reeuwijk](https://github.com/MartijnReeuwijk)
 
 ## Licence 🔓
 MIT © [Bas Pieren](https://github.com/BasPieren)
