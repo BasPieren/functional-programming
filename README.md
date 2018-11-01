@@ -124,9 +124,12 @@ First after getting back the data from the [OBA API](https://zoeken.oba.nl/api/v
   </ul>
 </ul>
 
-</details>  
+</details>
 
-After I had acces to the data I started to look through all the
+<br>
+After I had access to the data I started to look through all the data for things I could use for my project like the title, writer, genre and publication date of books. Quickly I saw that there was a lot of excess data that was not really needed.
+
+When I had a good idea of all the variables inside the data I started to work on my research questions. 
 
 ### Research questions
 After exploring the data I came up with the following research questions:
