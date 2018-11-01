@@ -212,6 +212,7 @@ A lot of books where written in 1945 detailing different events in World War 2. 
 * [OBA API](https://zoeken.oba.nl/api/v1/)
 * [node-oba-api](https://github.com/rijkvanzanten/node-oba-api)
 * [How to return part of string after a certain character?](https://stackoverflow.com/questions/16470113/how-to-return-part-of-string-after-a-certain-character)
+* [Readme by Daniel van de Velde](https://github.com/DanielvandeVelde/functional-programming/blob/master/README.md)
 * [Code provided by Martijn Reeuwijk](https://github.com/MartijnReeuwijk)
 
 ## Licence 🔓
