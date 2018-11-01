@@ -2,7 +2,7 @@
 
 This is the repo for my functional programming project.
 
-![Console Screenshot](images/Console_Screenshot.png)
+![Console Screenshot](images/Console_Screenshot_Intro.png)
 
 ## Table of Contents 🗃
 * [To Do](#to-do-)
@@ -183,6 +183,8 @@ The first thing that I noticed when looking through books from before World War 
 - Een Rus die in de Eerste Wereldoorlog en daarna tijdens de Russische Revolutie carrière gemaakt heeft door zijn botte onverschilligheid voor het welzijn van anderen komt tot inkeer en sterft na jaren van ascese als een heilige. | 1934
 - Een jonge Fransman moet zijn vrouw in Parijs achterlaten wanneer hij tijdens de Eerste Wereldoorlog als soldaat naar het front gestuurd wordt. | 1935
 - Een jongeman die na de Eerste Wereldoorlog in zijn Russische dorpje terugkeert, wordt door niemand begrepen als hij verteldt dat hij gelovig is geworden. | 1937
+
+Later during the early years of World War 2, a lot of books where about the new situation that was developing in the world.
 
 
 
