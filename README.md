@@ -205,7 +205,7 @@ Some books also took a more lighthearted approach and celebrated the end of the 
 - Van dollen Dinsdag tot de bevrijding | 1945
 - Vrij! | 1945
 
-A lot of books where written in 1945 detailing different events in World War 2. Later when we approach 1950 and the years that follow a lot les books where written about World War 2. Maybe this is because people where tired of hearing and reading about it.
+A lot of books where written in 1945 detailing different events in World War 2. Later when we approach 1950 and the years that follow a lot les books where written about World War 2. Maybe this is because people where tired of hearing and reading about it?
 
 ## Sources 📚
 
