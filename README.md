@@ -152,6 +152,8 @@ But I still found the part about the "cheerful genres" to still be a bit to abst
 **Have there been noticeable changes in genres that have been used in the period after World War 2?**
 
 ### Hypothesis
+After I formulated my research questions I came up with a hypothesis that I wanted to test.
+
 **After World War 2 books have drastically changed in genre to reflect the time period.**
 
 ### Sub-questions
