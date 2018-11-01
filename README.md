@@ -6,7 +6,13 @@ This is the repo for my functional programming project.
 * [To Do](#to-do)
 * [Description](#description)
 * [Installing](#installing)
+  * [Packages and technologies](#packages-and-technologies)
 * [Research](#research)
+  * [Data](#data)
+  * [Research questions](#research-questions)
+  * [Sub-questions](#sub-questions)
+  * [Variables](#variables)
+  * [Findings](#findings)
 * [Sources](#sources)
 * [Licence](#licence)
 
@@ -29,6 +35,8 @@ git clone https://github.com/BasPieren/functional-programming.git
 
 cd functional-programming
 
+npm install rijkvanzanten/node-oba-api
+
 npm install
 ```
 
@@ -42,7 +50,7 @@ This project makes use of the following packages and technologies:
 This is the research I have done in the first week of the project.
 
 ### Data
-
+First after getting back the data from the [OBA API](https://zoeken.oba.nl/api/v1/) I started to look through the data to see what
 
 ### Research questions
 
