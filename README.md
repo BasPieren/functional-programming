@@ -154,7 +154,7 @@ But I still found the part about the "cheerful genres" to still be a bit to abst
 ### Hypothesis
 After I formulated my research questions I came up with a hypothesis that I wanted to test.
 
-**"After World War 2 books have drastically changed in genre to reflect the time period."**
+- **"After World War 2 books have drastically changed in genre to reflect the time period."**
 
 ### Sub-questions
 After I finalized my research question I started to write down sub-questions about things I wanted to know:
