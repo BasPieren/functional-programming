@@ -43,7 +43,7 @@ This project makes use of the following packages and technologies:
 
 ## Sources 📚
 
-* [Rijk van zanten node-oba-api](https://github.com/rijkvanzanten/node-oba-api)
+* [node-oba-api](https://github.com/rijkvanzanten/node-oba-api)
 * [How to return part of string after a certain character?](https://stackoverflow.com/questions/16470113/how-to-return-part-of-string-after-a-certain-character)
 * [Code provided by Martijn Reeuwijk](https://github.com/MartijnReeuwijk)
 
