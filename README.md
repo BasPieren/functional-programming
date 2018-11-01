@@ -178,6 +178,12 @@ After I wrote down my sub-questions I started to write down the variables inside
 I made sure that I would only get back these variables when searching trough the data.
 
 ### Findings
+The first thing that I noticed when looking through books from before World War 2 is that a lot are about the aftermath of World War 1 and especially about the individual stories of soldiers. Descriptions for example are (in Dutch):
+
+- Een Rus die in de Eerste Wereldoorlog en daarna tijdens de Russische Revolutie carrière gemaakt heeft door zijn botte onverschilligheid voor het welzijn van anderen komt tot inkeer en sterft na jaren van ascese als een heilige. | 1934
+- Een jonge Fransman moet zijn vrouw in Parijs achterlaten wanneer hij tijdens de Eerste Wereldoorlog als soldaat naar het front gestuurd wordt. | 1935
+- Een jongeman die na de Eerste Wereldoorlog in zijn Russische dorpje terugkeert, wordt door niemand begrepen als hij verteldt dat hij gelovig is geworden. | 1937
+
 
 
 ## Sources 📚
