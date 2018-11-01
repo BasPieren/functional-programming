@@ -3,7 +3,7 @@
 This is the repo for my functional programming project.
 
 ## Table of Contents 🗃
-* [To Do](#to-do-:pushpin:)
+* [To Do](#to-do-)
 * [Description](#description)
 * [Installing](#installing)
   * [Packages and technologies](#packages-and-technologies)
