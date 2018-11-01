@@ -28,7 +28,7 @@ const client = new OBA({
 
 // Example search to the word 'rijk' sorted by title:
 client.get('search', {
-  q: 'Nederland',
+  q: 'Rijk',
   sort: 'title',
 })
 // END USE OF SOURCE
@@ -48,8 +48,8 @@ client.get('search', {
   			titel: e.titles? e.titles.title.$t : "No titel",
   			year: e.publication? e.publication.year.$t : "No year",
         writer: e.authors? e.authors['main-author'].$t : "No writer",
-  			// subject: e.subjects['topical-subject'].$t, // ? e.subjects['topical-subject']['search-term'].value : "No subject",
-        // description: e.summaries.summary.$t,
+  			subject: e.subjects? e.subjects['topical-subject'].$t : "No subject",
+        description: e.summaries? e.summaries.summary.$t : "No description",
         pages: e.description? e.description['physical-description'].$t : "No pages",
         kind: e.formats? e.formats.format.$t: "No kind",
   		}
