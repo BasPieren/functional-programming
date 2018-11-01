@@ -33,16 +33,16 @@ client.get('search', {
 })
 // END USE OF SOURCE
 
+  // START USE OF SOURCE: Laurens
   .then(result => JSON.parse(result))
-  // START USE OF SOURCE: Martijn Reeuwijk
   .then(result => {
     let keys = getData(result)
   })
-  // END USE OF SOURCE
 
   .catch(err => console.log(err)) // Something went wrong in the request to the API
 
   function getData(data) {
+    // START USE OF SOURCE: Martijn Reeuwijk
     data.aquabrowser.results.result.forEach(function(e){
       console.log(
         // START USE OF SOURCE: https://stackoverflow.com/questions/16470113/how-to-return-part-of-string-after-a-certain-character
@@ -56,4 +56,7 @@ client.get('search', {
         .concat("Soort: ".toUpperCase() + e.formats.format['search-term']) + "\n"  + "------------"
       )
     })
+    // END USE OF SOURCE
   }
+
+  // END USE OF SOURCE
