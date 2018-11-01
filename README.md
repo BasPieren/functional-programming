@@ -3,7 +3,7 @@
 This is the repo for my functional programming project.
 
 ## Table of Contents 🗃
-* [To Do](#to-do-📌)
+* [To Do](#to-do)
 * [Description](#description)
 * [Installing](#installing)
   * [Packages and technologies](#packages-and-technologies)
@@ -16,7 +16,7 @@ This is the repo for my functional programming project.
 * [Sources](#sources)
 * [Licence](#licence)
 
-## To Do 📌
+## To Do :pushpin:
 This is a list of things in want to do in this project.
 - [ ] Git, npm, and d3 are used; the project runs without errors; data is loaded with d3; there is a representation of data.
 - [ ] Data is rendered with d3; interpreting the representation is easier that interpreting the data itself.
