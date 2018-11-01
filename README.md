@@ -186,10 +186,30 @@ The first thing that I noticed when looking through books from before World War 
 
 Later during the early years of World War 2, a lot of books where about the new situation that was developing in the world.
 
+- Analyse van de politieke situatie in Nazi-Duitsland voor de Tweede Wereldoorlog, door een Australisch historicus. | 1938
+- Kroniek van de eerste maanden van de Tweede Wereldoorlog: september 1939-februari 1940. | 1939
+- Studie over de toekomstvoorspellingen van de Franse astroloog, met name met betrekking tot de Tweede Wereldoorlog. | 1940
+- Verzameling documenten, die de houding en visie van de Duitse bezetter weergeven en onderschrijven. | 1940
 
+After World War 2 a lot of books look back on the war and the events that happend and the different people who lost their lives or offered resistance against the oppressors.
+
+- Kunst in het harnas : gedachtenis-tentoonstelling ter ere van gevallen en vervolgde kunstenaars | 1945
+- Nederlandsch-Indië en Japan : hun betrekkingen in 1940-1941 | 1945
+- Monetaire vraagstukken tijdens en na den oorlog | 1945
+- Het verzet van de Nederlandsche bisschoppen tegen nationaal-socialisme en Duitsche tyrannie | 1945
+
+Some books also took a more lighthearted approach and celebrated the end of the war.
+
+- Programma der feestelijkheden op 26, 27 en 28 Juni 1945 ter viering van de bevrijding der hoofdstad uit Duitschen druk | 1945
+- Vrijheid : tijdgedichten en berijmde schotschriften | 1945
+- Van dollen Dinsdag tot de bevrijding | 1945
+- Vrij! | 1945
+
+A lot of books where written in 1945 detailing different events in World War 2. Later when we approach 1950 and the years that follow a lot les books where written about World War 2. Maybe this is because people where tired of hearing and reading about it.
 
 ## Sources 📚
 
+* [OBA API](https://zoeken.oba.nl/api/v1/)
 * [node-oba-api](https://github.com/rijkvanzanten/node-oba-api)
 * [How to return part of string after a certain character?](https://stackoverflow.com/questions/16470113/how-to-return-part-of-string-after-a-certain-character)
 * [Code provided by Martijn Reeuwijk](https://github.com/MartijnReeuwijk)

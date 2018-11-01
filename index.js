@@ -33,7 +33,7 @@ client.get('search', {
   facet: 'type(book)',
   refine: true,
   librarian: true,
-  page: 337 // 1 t/m 339
+  page: 328 // 1 t/m 339
 })
 // END USE OF SOURCE
 
