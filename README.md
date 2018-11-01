@@ -2,13 +2,15 @@
 
 This is the repo for my functional programming project.
 
+![Console Screenshot](images/Console_Screenshot.png)
+
 ## Table of Contents 🗃
 * [To Do](#to-do-)
 * [Description](#description-)
 * [Installing](#installing-)
   * [Packages and technologies](#packages-and-technologies)
 * [Research](#research-)
-  * [Data](#data-)
+  * [Data](#data)
   * [Research questions](#research-questions)
   * [Sub-questions](#sub-questions)
   * [Variables](#variables)
@@ -160,7 +162,14 @@ After I finalized my research question I started to write down sub-questions abo
 - What where the books about during World War 2?
 
 ### Variables
+After I wrote down my sub-questions I started to write down the variables inside the data that I thought I would need to find patterns. I came up with the following:
 
+- Titel
+- Author
+- Format
+- Publication Year
+- Pages
+- Subjects
 
 ### Findings
 
