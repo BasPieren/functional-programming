@@ -4,17 +4,17 @@ This is the repo for my functional programming project.
 
 ## Table of Contents 🗃
 * [To Do](#to-do-)
-* [Description](#description)
-* [Installing](#installing)
+* [Description](#description-)
+* [Installing](#installing-)
   * [Packages and technologies](#packages-and-technologies)
-* [Research](#research)
-  * [Data](#data)
+* [Research](#research-)
+  * [Data](#data-)
   * [Research questions](#research-questions)
   * [Sub-questions](#sub-questions)
   * [Variables](#variables)
   * [Findings](#findings)
-* [Sources](#sources)
-* [Licence](#licence)
+* [Sources](#sources-)
+* [Licence](#licence-)
 
 ## To Do 📌
 This is a list of things in want to do in this project.
