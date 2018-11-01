@@ -12,6 +12,7 @@ This is the repo for my functional programming project.
 * [Research](#research-)
   * [Data](#data)
   * [Research questions](#research-questions)
+    * [Hypothesis](#hypothesis)
   * [Sub-questions](#sub-questions)
   * [Variables](#variables)
   * [Findings](#findings)
@@ -149,6 +150,9 @@ I choose the following question:
 But I still found the part about the "cheerful genres" to still be a bit to abstract and vague. So I made an iteration on it.
 
 **Have there been noticeable changes in genres that have been used in the period after World War 2?**
+
+#### Hypothesis
+After World War 2 books have drastically changed in genre to reflect the period.
 
 ### Sub-questions
 After I finalized my research question I started to write down sub-questions about things I wanted to know:
