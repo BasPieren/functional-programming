@@ -204,7 +204,6 @@ function getData(data) {
   console.log(dataStore)
   // END USE OF SOURCE
 }
-// END USE OF SOURCE
 ```
 
 ### Findings
