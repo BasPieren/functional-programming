@@ -33,7 +33,7 @@ client.get('search', {
   facet: 'type(book)',
   refine: true,
   librarian: true,
-  page: 1 // 1 t/m 339
+  page: 339 // 1 t/m 339
 })
 // END USE OF SOURCE
 
@@ -55,7 +55,8 @@ client.get('search', {
         genre: e.genres? e.genres.genre.$t : "No genre".toUpperCase(),
         description: e.summaries? e.summaries.summary.$t : "No description".toUpperCase(),
         // START USE OF SOURCE: https://stackoverflow.com/questions/16470113/how-to-return-part-of-string-after-a-certain-character
-        pages: e.description? e.description['physical-description'].$t.substring(0, e.description['physical-description'].$t.indexOf("a")) : "No pages".toUpperCase(),
+        pages: e.description? e.description['physical-description'].$t
+          .substring(0, e.description['physical-description'].$t.indexOf("p")) : "No pages".toUpperCase(),
         // END USE OF SOURCE
         kind: e.formats? e.formats.format.$t: "No kind".toUpperCase(),
   		}
