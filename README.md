@@ -185,6 +185,28 @@ After I wrote down my sub-questions I started to look at the properties inside t
 
 I made sure that I would only get back these variables when searching trough the data.
 
+```js
+function getData(data) {
+  // START USE OF SOURCE: Martijn Reeuwijk & Laurens
+  let dataStore = data.aquabrowser.results.result.map(e => {
+    return {
+      TITEL: e.titles? e.titles['short-title'].$t : "No titel".toUpperCase(),
+      YEAR: e.publication? parseInt(e.publication.year.$t, 10)
+        : "No year".toUpperCase(),
+      AUTHOR: e.authors? e.authors['main-author'].$t : "No writer".toUpperCase(),
+      GENRE: e.genres? e.genres.genre.$t : "No genre".toUpperCase(),
+      DESCRIPTION: e.summaries? e.summaries.summary.$t : "No description".toUpperCase(),
+      PAGES: e.description? parseInt(e.description['physical-description'].$t, 10)
+        : "No pages".toUpperCase(),
+      KIND: e.formats? e.formats.format.$t: "No kind".toUpperCase(),
+    }
+  })
+  console.log(dataStore)
+  // END USE OF SOURCE
+}
+// END USE OF SOURCE
+```
+
 ### Findings
 The first thing that I noticed when looking through books from before World War 2 is that a lot are about the aftermath of World War 1 and especially about the individual stories of soldiers. Descriptions for example are (in Dutch):
 
