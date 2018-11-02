@@ -33,7 +33,7 @@ client.get('search', {
   facet: 'type(book)',
   refine: true,
   librarian: true,
-  page: 328 // 1 t/m 339
+  page: 1 // 1 t/m 339
 })
 // END USE OF SOURCE
 
@@ -49,12 +49,14 @@ client.get('search', {
     // START USE OF SOURCE: Martijn Reeuwijk & Laurens
     let dataStore = data.aquabrowser.results.result.map(e => {
       return {
-  			titel: e.titles? e.titles.title.$t : "No titel".toUpperCase(),
+  			titel: e.titles? e.titles['short-title'].$t : "No titel".toUpperCase(),
   			year: e.publication? e.publication.year.$t : "No year".toUpperCase(),
         writer: e.authors? e.authors['main-author'].$t : "No writer".toUpperCase(),
         genre: e.genres? e.genres.genre.$t : "No genre".toUpperCase(),
         description: e.summaries? e.summaries.summary.$t : "No description".toUpperCase(),
-        pages: e.description? e.description['physical-description'].$t : "No pages".toUpperCase(),
+        // START USE OF SOURCE: https://stackoverflow.com/questions/16470113/how-to-return-part-of-string-after-a-certain-character
+        pages: e.description? e.description['physical-description'].$t.substring(0, e.description['physical-description'].$t.indexOf("a")) : "No pages".toUpperCase(),
+        // END USE OF SOURCE
         kind: e.formats? e.formats.format.$t: "No kind".toUpperCase(),
   		}
     })
