@@ -52,7 +52,7 @@ client.get('search', {
   			TITEL: e.titles? e.titles['short-title'].$t : "No titel".toUpperCase(),
   			YEAR: e.publication? parseInt(e.publication.year.$t, 10)
           : "No year".toUpperCase(),
-        WRITER: e.authors? e.authors['main-author'].$t : "No writer".toUpperCase(),
+        AUTHOR: e.authors? e.authors['main-author'].$t : "No writer".toUpperCase(),
         GENRE: e.genres? e.genres.genre.$t : "No genre".toUpperCase(),
         DESCRIPTION: e.summaries? e.summaries.summary.$t : "No description".toUpperCase(),
         PAGES: e.description? parseInt(e.description['physical-description'].$t, 10)
