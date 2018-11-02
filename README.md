@@ -156,6 +156,10 @@ After I formulated my research questions I came up with a hypothesis that I want
 
 - **"After World War 2 books have drastically changed in genre to reflect the time period."**
 
+_EDIT:_ When I changed my research question I also changed my hypothesis:
+
+- **"After World War 2 books have drastically changed in subjects to reflect the time period."**
+
 ### Sub-questions
 After I finalized my research question and hypothesis I started to write down sub-questions about things I wanted to know about:
 
