@@ -147,7 +147,7 @@ But I still found the part about the "cheerful genres" to still be a bit to abst
 
 **Have there been noticeable changes in genres that have been used in the period after World War 2?**
 
-_EDIT:_ After I went through over the sorted data to find patterns I noticed that a lot of books didn't have a genre. Almost all of them did have a description so I decided to focus on that instead of the genre. So I also changed my research question:
+_EDIT:_ After I went through the sorted data to find patterns I noticed that a lot of books didn't have a genre. Almost all of them did have a description so I decided to focus on that instead of the genre. So I also changed my research question:
 
 **Have there been noticeable changes in the sort of books that have been written in the period after World War 2?**
 
