@@ -53,7 +53,7 @@ This project makes use of the following packages and technologies:
 This is the research I have done in the first week of the project.
 
 ### Data
-First after getting back the data from the [OBA API](https://zoeken.oba.nl/api/v1/) I looked through the data to see what kind of values it was holding. The data was structured somewhat like this:
+First after getting back the data from the [OBA API](https://zoeken.oba.nl/api/v1/) I looked through the data to see what kind of properties it was holding. The data was structured somewhat like this:
 
 <details><summary>Data Structure</summary>
 <ul>
@@ -128,7 +128,7 @@ First after getting back the data from the [OBA API](https://zoeken.oba.nl/api/v
 </details>
 
 <br>
-I went looking for variables that I could use for my project. I expected to find variables like: title, writer, genre and publication date of books. Quickly I saw that there was a lot of excess data that was not really needed.
+I went looking for variables that I could use for my project. I expected to find properties like: title, writer, genre and publication date of books. Quickly I saw that there was a lot of excess data that was not really needed.
 
 ### Research questions
 After exploring the data I came up with the following research questions:
@@ -170,7 +170,7 @@ After I finalized my research question and hypothesis I started to write down su
 I wanted to focus on the period during and after World War 2 so that I would have a base that I could use to compare my hypothesis to.
 
 ### Variables
-After I wrote down my sub-questions I started to write down the variables inside the data that I thought I would need to find patterns. I came up with the following:
+After I wrote down my sub-questions I started to look at the properties inside the data that I thought I would need to find patterns. I came up with the following:
 
 - Titel
 - Author
