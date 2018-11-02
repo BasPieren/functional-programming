@@ -192,14 +192,14 @@ The first thing that I noticed when looking through books from before World War 
 - Een jonge Fransman moet zijn vrouw in Parijs achterlaten wanneer hij tijdens de Eerste Wereldoorlog als soldaat naar het front gestuurd wordt. | 1935
 - Een jongeman die na de Eerste Wereldoorlog in zijn Russische dorpje terugkeert, wordt door niemand begrepen als hij verteldt dat hij gelovig is geworden. | 1937
 
-Later during the early years of World War 2, a lot of books where about the new situation that was developing in the world.
+Later during the early years of World War 2, books where about the new situation that was developing in the world.
 
 - Analyse van de politieke situatie in Nazi-Duitsland voor de Tweede Wereldoorlog, door een Australisch historicus. | 1938
 - Kroniek van de eerste maanden van de Tweede Wereldoorlog: september 1939-februari 1940. | 1939
 - Studie over de toekomstvoorspellingen van de Franse astroloog, met name met betrekking tot de Tweede Wereldoorlog. | 1940
 - Verzameling documenten, die de houding en visie van de Duitse bezetter weergeven en onderschrijven. | 1940
 
-After World War 2 a lot of books look back on the war and the events that happend and the different people who lost their lives or offered resistance against the oppressors.
+After World War 2 a lot of books look back on the war, the events that happend and the different people who lost their lives or offered resistance against the oppressors.
 
 - Kunst in het harnas : gedachtenis-tentoonstelling ter ere van gevallen en vervolgde kunstenaars | 1945
 - Nederlandsch-Indië en Japan : hun betrekkingen in 1940-1941 | 1945
@@ -213,7 +213,7 @@ Some books also took a more lighthearted approach and celebrated the end of the 
 - Van dollen Dinsdag tot de bevrijding | 1945
 - Vrij! | 1945
 
-A lot of books where written in 1945 detailing different events in World War 2. Later when we approach 1950 and the years that follow a lot les books where written about World War 2. Maybe this is because people where tired of hearing and reading about it?
+A lot of books where written in 1945 detailing different events in World War 2. Later when we approach 1950 and the years that follow a lot less books where written about World War 2. Maybe this is because people where tired of hearing and reading about it?
 
 ## Sources 📚
 
