@@ -33,7 +33,7 @@ client.get('search', {
   facet: 'type(book)',
   refine: true,
   librarian: true,
-  page: 20 // 1 t/m 339
+  page: 300 // 1 t/m 339
 })
 // END USE OF SOURCE
 
@@ -57,7 +57,7 @@ client.get('search', {
         DESCRIPTION: e.summaries? e.summaries.summary.$t : "No description".toUpperCase(),
         PAGES: e.description? parseInt(e.description['physical-description'].$t, 10)
           : "No pages".toUpperCase(),
-        kind: e.formats? e.formats.format.$t: "No kind".toUpperCase(),
+        KIND: e.formats? e.formats.format.$t: "No kind".toUpperCase(),
   		}
     })
     console.log(dataStore)
