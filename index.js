@@ -33,7 +33,7 @@ client.get('search', {
   facet: 'type(book)',
   refine: true,
   librarian: true,
-  page: 1 // 1 t/m 339
+  page: 20 // 1 t/m 339
 })
 // END USE OF SOURCE
 
@@ -50,15 +50,13 @@ client.get('search', {
     let dataStore = data.aquabrowser.results.result.map(e => {
       return {
   			TITEL: e.titles? e.titles['short-title'].$t : "No titel".toUpperCase(),
-  			YEAR: e.publication? e.publication.year.$t : "No year".toUpperCase(),
+  			YEAR: e.publication? parseInt(e.publication.year.$t, 10)
+          : "No year".toUpperCase(),
         WRITER: e.authors? e.authors['main-author'].$t : "No writer".toUpperCase(),
         GENRE: e.genres? e.genres.genre.$t : "No genre".toUpperCase(),
         DESCRIPTION: e.summaries? e.summaries.summary.$t : "No description".toUpperCase(),
-        // START USE OF SOURCE: https://stackoverflow.com/questions/16470113/how-to-return-part-of-string-after-a-certain-character
-        PAGES: e.description? e.description['physical-description'].$t
-          .substring(0, e.description['physical-description'].$t.indexOf("p"))
-          .trim() : "No pages".toUpperCase(),
-        // END USE OF SOURCE
+        PAGES: e.description? parseInt(e.description['physical-description'].$t, 10)
+          : "No pages".toUpperCase(),
         kind: e.formats? e.formats.format.$t: "No kind".toUpperCase(),
   		}
     })
