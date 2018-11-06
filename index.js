@@ -33,7 +33,7 @@ client.get('search', {
   facet: 'type(book)',
   refine: true,
   librarian: true,
-  page: 300 // 1 t/m 339
+  page: 329 // 1 t/m 339
 })
 // END USE OF SOURCE
 
@@ -55,7 +55,7 @@ client.get('search', {
         AUTHOR: e.authors? e.authors['main-author'].$t : "No writer".toUpperCase(),
         GENRE: e.genres? e.genres.genre.$t : "No genre".toUpperCase(),
         DESCRIPTION: e.summaries? e.summaries.summary.$t : "No description".toUpperCase(),
-        PAGES: e.description? parseInt(e.description['physical-description'].$t, 10)
+        PAGES: e.description? parseInt(e.description['physical-description'].$t.match(/\d+/g).map(Number), 10)
           : "No pages".toUpperCase(),
         KIND: e.formats? e.formats.format.$t: "No kind".toUpperCase(),
   		}
