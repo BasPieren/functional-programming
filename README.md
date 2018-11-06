@@ -21,8 +21,8 @@ This is the repo for my functional programming project.
 
 ## To Do 📌
 This is a list of things in want to do in this project.
-- [ ] Git, npm, and d3 are used; the project runs without errors; data is loaded with d3; there is a representation of data.
-- [ ] Data is rendered with d3; interpreting the representation is easier that interpreting the data itself.
+- [X] Git, npm, and d3 are used; the project runs without errors; data is loaded with d3; there is a representation of data.
+- [X] Data is rendered with d3; interpreting the representation is easier that interpreting the data itself.
 - [ ] d3 is used to clean data and make a dynamic representation; data is functionally transformed.
 - [ ] Representation and use of d3 go beyond an example: there are demonstrable additions like a well-chosen scale.
 - [ ] Changes persist across page reloads.
@@ -196,7 +196,7 @@ function getData(data) {
       AUTHOR: e.authors? e.authors['main-author'].$t : "No writer".toUpperCase(),
       GENRE: e.genres? e.genres.genre.$t : "No genre".toUpperCase(),
       DESCRIPTION: e.summaries? e.summaries.summary.$t : "No description".toUpperCase(),
-      PAGES: e.description? parseInt(e.description['physical-description'].$t, 10)
+      PAGES: e.description? parseInt(e.description['physical-description'].$t.match(/\d+/g).map(Number), 10)
         : "No pages".toUpperCase(),
       KIND: e.formats? e.formats.format.$t: "No kind".toUpperCase(),
     }
