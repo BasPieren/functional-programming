@@ -52,7 +52,7 @@ This project makes use of the following packages and technologies:
 * [dotenv](https://www.npmjs.com/package/dotenv)
 
 ## Research 📑
-This is the research I have done in the first week of the project.
+This is the research process I have done during the 2 weeks of the project.
 
 ### Data
 First after getting back the data from the [OBA API](https://zoeken.oba.nl/api/v1/) I looked through the data to see what kind of properties it was holding. The data was structured somewhat like this:
@@ -242,8 +242,7 @@ A lot of books where written in 1945 detailing different events in World War 2. 
 This are some sketches I made after doing my research do see what kind of visualisation I wanted too make.
 
 ![Sketch Photo](images/Sketch1.jpg)
-
-I wanted to make a timeline that would showcase all the books that were written during 1935 and 1950 that had something to do with the world wars. Every dot would represent a book. This way you can get an idea of how many books were written, for example, during the start of world war 2 in 1940.
+> I wanted to make a timeline that would showcase all the books that were written during 1935 and 1950 that had something to do with the world wars. Every dot would represent a book. This way you can get an idea of how many books were written, for example, during the start of world war 2 in 1940.
 
 ## Observable
 
