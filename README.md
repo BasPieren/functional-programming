@@ -247,7 +247,7 @@ I wanted to make a timeline that would showcase all the books that were written 
 
 ## Observable
 
-[Link to the d3 data visualisation in observable](https://beta.observablehq.com/d/12cd984ea225e25f)
+[Link to the d3 data visualisation in observable.](https://beta.observablehq.com/d/12cd984ea225e25f)
 
 ## Sources 📚
 
