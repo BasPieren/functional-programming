@@ -224,7 +224,48 @@ This are some sketches I made after doing my research do see what kind of visual
 > I wanted to make a timeline that would showcase all the books that were written during 1935 and 1950 that had something to do with the world wars. Every dot would represent a book. This way you can get an idea of how many books were written, for example, during the start of world war 2 in 1940.
 
 ## Transform data 🛠
-Here I will explain how I transformed my data.
+Here I will explain the important parts on how I transformed my data.
+
+_NOTE:_ The complete code can be found in index.js.
+
+First I installed the [node-oba-api](https://github.com/rijkvanzanten/node-oba-api) made by Rijk van Zanten so I could more easily interface with the [OBA API](https://zoeken.oba.nl/api/v1/).
+
+After the installation I modified the `.get` request with some extra parameters to narrow down the books I was looking for. I added the   
+refine, sort, facet, librarian and page parameters. The request now looked like this:
+
+```js
+client.get('search', {
+  refine: true,
+  q: 'Wereld-Oorlog',
+  sort: 'year',
+  facet: 'type(book)',
+  librarian: true,
+  page: 1 // 1 t/m 339
+})
+```
+After we got a workshop from [Laurens](https://github.com/Razpudding) on how to access and structure the data we got from the API I wrote a function that would get me back all the parameters I would need for my visualisation:
+
+```js
+function getData(data) {
+  // START USE OF SOURCE: Martijn Reeuwijk & Laurens
+  let dataStore = data.aquabrowser.results.result.map(e => {
+    return {
+      TITEL: e.titles? e.titles['short-title'].$t : "No titel".toUpperCase(),
+      YEAR: e.publication? parseInt(e.publication.year.$t, 10)
+        : "No year".toUpperCase(),
+      AUTHOR: e.authors? e.authors['main-author'].$t : "No writer".toUpperCase(),
+      GENRE: e.genres? e.genres.genre.$t : "No genre".toUpperCase(),
+      DESCRIPTION: e.summaries? e.summaries.summary.$t : "No description".toUpperCase(),
+      PAGES: e.description? parseInt(e.description['physical-description'].$t.match(/\d+/g).map(Number), 10)
+        : 0,
+      KIND: e.formats? e.formats.format.$t: "No kind".toUpperCase(),
+    }
+  })
+  console.log(dataStore)
+  // END USE OF SOURCE
+}
+```
+The function maps over the data from the OBA API and saves it inside a new array called dataStore. For every book it returns a title, year, author, genre, description, pages and kind. For every property I look if there is a value and if not replace it with something else. I also made sure that the year and pages would be parsed to be a number instead of a string.
 
 ## Observable 📊
 
@@ -237,6 +278,7 @@ Here I will explain how I transformed my data.
 * [How to return part of string after a certain character?](https://stackoverflow.com/questions/16470113/how-to-return-part-of-string-after-a-certain-character)
 * [Readme by Daniel van de Velde](https://github.com/DanielvandeVelde/functional-programming/blob/master/README.md)
 * [Code provided by Martijn Reeuwijk](https://github.com/MartijnReeuwijk)
+* [Code provided by Laurens](https://github.com/Razpudding)
 
 ## Licence 🔓
 MIT © [Bas Pieren](https://github.com/BasPieren)
