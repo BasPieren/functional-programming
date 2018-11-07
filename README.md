@@ -242,6 +242,8 @@ This are some sketches I made after doing my research do see what kind of visual
 
 ![Sketch Photo](images/Sketch1.jpg)
 
+I wanted to make a timeline that would showcase all the books that were written during 1935 and 1950 that had something to do with the world wars. Every dot would represent a book. This way you can get an idea of how many books were written, for example, during the start of world war 2 in 1940.
+
 ## Sources 📚
 
 * [OBA API](https://zoeken.oba.nl/api/v1/)
