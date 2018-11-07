@@ -230,8 +230,7 @@ _NOTE:_ The complete code can be found in index.js.
 
 First I installed the [node-oba-api](https://github.com/rijkvanzanten/node-oba-api) made by Rijk van Zanten so I could more easily interface with the [OBA API](https://zoeken.oba.nl/api/v1/).
 
-After the installation I modified the `.get` request with some extra parameters to narrow down the books I was looking for. I added the   
-refine, sort, facet, librarian and page parameters. The request now looked like this:
+After the installation I modified the `.get` request with some extra parameters to narrow down the books I was looking for. I added the   refine, sort, facet, librarian and page parameters. The request now looked like this:
 
 ```js
 client.get('search', {
