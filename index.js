@@ -56,7 +56,7 @@ client.get('search', {
         GENRE: e.genres? e.genres.genre.$t : "No genre".toUpperCase(),
         DESCRIPTION: e.summaries? e.summaries.summary.$t : "No description".toUpperCase(),
         PAGES: e.description? parseInt(e.description['physical-description'].$t.match(/\d+/g).map(Number), 10)
-          : "No pages".toUpperCase(),
+          : 0,
         KIND: e.formats? e.formats.format.$t: "No kind".toUpperCase(),
   		}
     })

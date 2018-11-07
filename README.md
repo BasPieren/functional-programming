@@ -16,6 +16,7 @@ This is the repo for my functional programming project.
   * [Sub-questions](#sub-questions)
   * [Variables](#variables)
   * [Findings](#findings)
+  * [Sketches](#sketches)
 * [Sources](#sources-)
 * [Licence](#licence-)
 
