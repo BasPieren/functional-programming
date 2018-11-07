@@ -28,7 +28,6 @@ This is a list of things in want to do in this project.
 - [X] Data is rendered with d3; interpreting the representation is easier that interpreting the data itself.
 - [ ] d3 is used to clean data and make a dynamic representation; data is functionally transformed.
 - [ ] Representation and use of d3 go beyond an example: there are demonstrable additions like a well-chosen scale.
-- [ ] Changes persist across page reloads.
 - [ ] The way the student applies subject matter is more advanced than what they were taught in class; let’s switch places.
 
 ## Description 📝
