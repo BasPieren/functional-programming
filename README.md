@@ -17,7 +17,8 @@ This is the repo for my functional programming project.
   * [Variables](#variables)
   * [Findings](#findings)
   * [Sketches](#sketches)
-* [Observable](#observable)
+* [Transform Data](#Transform-data-)  
+* [Observable](#observable-)
 * [Sources](#sources-)
 * [Licence](#licence-)
 
@@ -187,27 +188,6 @@ After I wrote down my sub-questions I started to look at the properties inside t
 
 I made sure that I would only get back these variables when searching trough the data.
 
-```js
-function getData(data) {
-  // START USE OF SOURCE: Martijn Reeuwijk & Laurens
-  let dataStore = data.aquabrowser.results.result.map(e => {
-    return {
-      TITEL: e.titles? e.titles['short-title'].$t : "No titel".toUpperCase(),
-      YEAR: e.publication? parseInt(e.publication.year.$t, 10)
-        : "No year".toUpperCase(),
-      AUTHOR: e.authors? e.authors['main-author'].$t : "No writer".toUpperCase(),
-      GENRE: e.genres? e.genres.genre.$t : "No genre".toUpperCase(),
-      DESCRIPTION: e.summaries? e.summaries.summary.$t : "No description".toUpperCase(),
-      PAGES: e.description? parseInt(e.description['physical-description'].$t.match(/\d+/g).map(Number), 10)
-        : "No pages".toUpperCase(),
-      KIND: e.formats? e.formats.format.$t: "No kind".toUpperCase(),
-    }
-  })
-  console.log(dataStore)
-  // END USE OF SOURCE
-}
-```
-
 ### Findings
 The first thing that I noticed when looking through books from before World War 2 is that a lot are about the aftermath of World War 1 and especially about the individual stories of soldiers. Descriptions for example are (in Dutch):
 
@@ -244,7 +224,10 @@ This are some sketches I made after doing my research do see what kind of visual
 ![Sketch Photo](images/Sketch1.jpg)
 > I wanted to make a timeline that would showcase all the books that were written during 1935 and 1950 that had something to do with the world wars. Every dot would represent a book. This way you can get an idea of how many books were written, for example, during the start of world war 2 in 1940.
 
-## Observable
+## Transform data 🛠
+Here I will explain how I transformed my data.
+
+## Observable 📊
 
 [Link to the d3 data visualisation in observable.](https://beta.observablehq.com/d/12cd984ea225e25f)
 
