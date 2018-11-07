@@ -230,7 +230,7 @@ _NOTE:_ The complete code can be found in index.js.
 
 First I installed the [node-oba-api](https://github.com/rijkvanzanten/node-oba-api) made by Rijk van Zanten so I could more easily interface with the [OBA API](https://zoeken.oba.nl/api/v1/).
 
-After the installation I modified the `.get` request with some extra parameters to narrow down the books I was looking for. I added the   refine, sort, facet, librarian and page parameters. The request now looked like this:
+After the installation I modified the `.get` request with some extra parameters to narrow down the books that I would get back. I added the refine, sort, facet, librarian and page parameters. The request now looked like this:
 
 ```js
 client.get('search', {
@@ -242,7 +242,7 @@ client.get('search', {
   page: 1 // 1 t/m 339
 })
 ```
-After we got a workshop from [Laurens](https://github.com/Razpudding) on how to access and structure the data we got from the API I wrote a function that would get me back all the parameters I would need for my visualisation:
+After we got a workshop from [Laurens](https://github.com/Razpudding) on how to access and structure the data we got from the API, I wrote a function that would only give me back the parameters that I would need for my visualisation:
 
 ```js
 function getData(data) {
