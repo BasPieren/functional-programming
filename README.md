@@ -163,11 +163,11 @@ After I formulated my research questions I came up with a hypothesis that I want
 
 - **"After World War 2 books have drastically changed in genre to reflect the time period."**
 
-_EDIT 2-11-2018:_ When I changed my research question I also changed my hypothesis:
+_EDIT 2-11-2018: When I changed my research question I also changed my hypothesis:_
 
 - **"After World War 2 books have drastically changed in subjects to reflect the time period."**
 
-_EDIT 5-11-2018:_ When I changed my research question (again) I also changed my hypothesis (again):
+_EDIT 5-11-2018: When I changed my research question (again) I also changed my hypothesis (again):_
 
 - **"After World War 2 less books have been published to reflect the time period."**
 
@@ -235,7 +235,7 @@ This are some sketches I made after doing my research do see what kind of visual
 ## Transform data 🛠
 Here I will explain the important parts on how I transformed my data.
 
-_NOTE:_ The complete code can be found in index.js.
+_NOTE: The complete code can be found in index.js._
 
 First I installed the [node-oba-api](https://github.com/rijkvanzanten/node-oba-api) made by Rijk van Zanten so I could more easily interface with the [OBA API](https://zoeken.oba.nl/api/v1/).
 
