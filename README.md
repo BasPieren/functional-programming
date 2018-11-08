@@ -238,7 +238,7 @@ Here I will explain the important parts on how I transformed my data.
 
 _NOTE: The complete code can be found in index.js._
 
-First I installed the [node-oba-api](https://github.com/rijkvanzanten/node-oba-api) made by Rijk van Zanten so I could more easily interface with the [OBA API](https://zoeken.oba.nl/api/v1/).
+First I installed the [node-oba-api](https://github.com/rijkvanzanten/node-oba-api) made by [Rijk van Zanten](https://github.com/rijkvanzanten) so I could more easily interface with the [OBA API](https://zoeken.oba.nl/api/v1/).
 
 After the installation I modified the `.get` request with some extra parameters to narrow down the books that I would get back. I added the refine, sort, facet, librarian and page parameters. The request now looked like this:
 
