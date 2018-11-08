@@ -20,6 +20,7 @@ This is the repo for my functional programming project.
 * [Transform Data](#Transform-data-)  
 * [Observable](#observable-)
 * [Sources](#sources-)
+  * [Honourable Mentions](#honourable-mentions)
 * [Licence](#licence-)
 
 ## To Do 📌
@@ -287,9 +288,11 @@ After I got back all the data that I needed started work on my visualisation in 
 * [OBA API](https://zoeken.oba.nl/api/v1/)
 * [node-oba-api](https://github.com/rijkvanzanten/node-oba-api)
 * [How to return part of string after a certain character?](https://stackoverflow.com/questions/16470113/how-to-return-part-of-string-after-a-certain-character)
+* [Code provided by Laurens](https://github.com/Razpudding)
+
+### Honourable Mentions
 * [Readme by Daniel van de Velde](https://github.com/DanielvandeVelde/functional-programming/blob/master/README.md)
 * [Code provided by Martijn Reeuwijk](https://github.com/MartijnReeuwijk)
-* [Code provided by Laurens](https://github.com/Razpudding)
 
 ## Licence 🔓
 MIT © [Bas Pieren](https://github.com/BasPieren)
