@@ -32,8 +32,7 @@ client.get('search', {
   refine: true,
   sort: 'year',
   facet: 'type(book)',
-  librarian: true,
-  page: 337 // 1 t/m 339
+  page: 329 // 338 t/m 329
 })
 // END USE OF SOURCE
 
