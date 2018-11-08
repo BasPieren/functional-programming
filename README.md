@@ -24,7 +24,7 @@ This is the repo for my functional programming project.
 * [Licence](#licence-)
 
 ## To Do 📌
-This is a list of things in want to do in this project.
+This is a list of things in want to do in this project:
 - [X] Git, npm, and d3 are used; the project runs without errors; data is loaded with d3; there is a representation of data.
 - [X] Data is rendered with d3; interpreting the representation is easier that interpreting the data itself.
 - [X] d3 is used to clean data and make a dynamic representation; data is functionally transformed.
@@ -32,7 +32,7 @@ This is a list of things in want to do in this project.
 - [ ] The way the student applies subject matter is more advanced than what they were taught in class; let’s switch places.
 
 ## Description 📝
-During this project I used d3 to make a clean data presentation using the data we got from the OBA API. I did research based on the data which I used to formulate a research question, sub-questions and hypothesis.
+During this project I used the d3 javascript library to make a data presentation using the data we got from the OBA API. I did research based on the data which I used to formulate a research question, sub-questions and hypothesis.
 
 ## Installing 🔍
 To install this application enter the following into your terminal:
@@ -57,7 +57,7 @@ This project makes use of the following packages and technologies:
 This is the research process I have done during the 2 weeks of the project.
 
 ### Data
-First after getting back the data from the [OBA API](https://zoeken.oba.nl/api/v1/) I looked through the data to see what kind of properties it was holding. The data was structured somewhat like this:
+First after getting the data back from the [OBA API](https://zoeken.oba.nl/api/v1/) I started looking through the data to see what kind of properties it was holding. The data was structured somewhat like this:
 
 <details><summary>Data Structure</summary>
 <ul>
@@ -130,9 +130,10 @@ First after getting back the data from the [OBA API](https://zoeken.oba.nl/api/v
   </ul>
 </ul>
 </details>
+> Thanks to [@DanielvandeVelde](https://github.com/DanielvandeVelde/) for writing this down.
 
 <br>
-I started to look for variables that I could use for my project. I expected to find properties for each book like a title, writer, genre and publication date of books. Quickly I saw that there was a lot of excess data that was not really needed.
+I started to look for properties that I could use for my project. I expected to find properties for each book like a title, writer, genre and publication date of books. Quickly I saw that there was a lot of excess data that was not really needed.
 
 ### Research questions
 After looking through the data I came up with the following research questions:
@@ -147,7 +148,7 @@ These where things I thought that would be interesting to know and that could be
 
 **Have more "cheerful" genres been used in the period after 1940-1945?**
 
-But I still found the part about the "cheerful genres" to still be a bit to abstract and vague. So I made an iteration on it:
+But I still found the part about "cheerful genres" to be a bit to abstract and vague. So I made an iteration on it:
 
 **Have there been noticeable changes in genres that have been used in the period after World War 2?**
 
@@ -155,9 +156,9 @@ _EDIT 2-11-2018: After I went through the sorted data to find patterns I noticed
 
 **Have there been noticeable changes in the sort of books that have been written in the period after World War 2?**
 
-_EDIT 5-11-2018: When I started to sketch I found out that I was not very easy to make a visualisation based on the description of books. I gravitated more to using the publication date in combination with the number of pages of each book. So I changed my research question yet again:_
+_EDIT 5-11-2018: When I started to sketch I found out that I was not very easy to make a visualisation based on the description of books. I gravitated to using the publication date in combination with the number of pages of each book. So I changed my research question yet again:_
 
-**Have there been noticeable changes in the number of books and the number of pages that have been written in the period after World War 2?**
+**Have there been noticeable changes in the number of books and the number of pages that have been written and used in the period after World War 2?**
 
 ### Hypothesis
 After I formulated my research questions I came up with a hypothesis that I wanted to test:
@@ -211,7 +212,7 @@ Later during the early years of World War 2, books where about the new situation
 - Studie over de toekomstvoorspellingen van de Franse astroloog, met name met betrekking tot de Tweede Wereldoorlog. | 1940
 - Verzameling documenten, die de houding en visie van de Duitse bezetter weergeven en onderschrijven. | 1940
 
-After World War 2 a lot of books look back on the war, the events that happend and the different people who lost their lives or offered resistance against the oppressors.
+After World War 2 a lot of books look back on the war, the events that happened and the different people who lost their lives or offered resistance against the oppressors.
 
 - Kunst in het harnas : gedachtenis-tentoonstelling ter ere van gevallen en vervolgde kunstenaars | 1945
 - Nederlandsch-Indië en Japan : hun betrekkingen in 1940-1941 | 1945
@@ -228,7 +229,7 @@ Some books also took a more lighthearted approach and celebrated the end of the 
 A lot of books where written in 1945 detailing different events in World War 2. Later when we approach 1950 and the years that follow a lot less books where written about World War 2. Maybe this is because people where tired of hearing and reading about it?
 
 ### Sketches
-This are some sketches I made after doing my research do see what kind of visualisation I wanted too make.
+This are some sketches I made after doing my research to see what kind of visualisation I wanted too make.
 
 ![Sketch Photo](images/Sketch1.jpg)
 > My idea was to make a timeline that would showcase all the books that were written during 1935 and 1950 that had something to do with the world wars, with the second world war in particular. Every dot would represent a book. This way you can get an idea of how many books were written, for example, during the start of world war 2 in 1940.
@@ -244,8 +245,8 @@ After the installation I modified the `.get` request with some extra parameters 
 
 * `refine`: Refine allows me to get more information on a book like genre and type.
 * `sort`: Sort allows me to sort the books based on their publication year.
-* `facet`: Facets allows me to only get books back.
-* `page`: With page and can navigate trough all the available pages.
+* `facet`: Facet allows me to only get books back.
+* `page`: Page allows me to navigate trough all the available pages.
 
 ```js
 client.get('search', {
@@ -278,9 +279,9 @@ function getData(data) {
   // END USE OF SOURCE
 }
 ```
-The function maps over the data from the OBA API and saves it inside a new array called dataStore. For every book it returns a title, year, author, genre, description, pages and kind. For every property I looks if there is a value and, if there is none, replace it with something else. I also made sure that the year and pages would be parsed to be a number instead of a string.
+The function maps over the data from the OBA API and saves it inside a new array called dataStore. For every book it returns the title, year, author, genre, description, pages and kind. For every property I looks if there is a value and, if there is none, replace it with something else. I also made sure that the year and pages would be parsed to be a number instead of a string.
 
-By manually changing the page number I found out that there are 339 pages with books. The books that I need where on page 329 till 338. So I tried to narrow down the result by using the `pubYearRange` facet but I couldn't get I to work.
+By manually changing the page number I found out that there are 339 pages with books. The books that I needed, from 1935 till 1950, where on page 329 till 338. I tried to narrow down the result by using the `pubYearRange` facet but I couldn't get it to work. Because of this I needed to do some extra manual copy pasting later on in d3. If I had more time I would make sure to fix this first.
 
 ## Observable 📊
 After I got back all the data that I needed started work on my visualisation in d3.
