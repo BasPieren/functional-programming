@@ -240,7 +240,12 @@ _NOTE: The complete code can be found in index.js._
 
 First I installed the [node-oba-api](https://github.com/rijkvanzanten/node-oba-api) made by [Rijk van Zanten](https://github.com/rijkvanzanten) so I could more easily interface with the [OBA API](https://zoeken.oba.nl/api/v1/).
 
-After the installation I modified the `.get` request with some extra parameters to narrow down the books that I would get back. I added the refine, sort, facet, librarian and page parameters. The request now looked like this:
+After the installation I modified the `.get` request with some extra parameters to narrow down the books that I would get back.
+
+* `refine`: Refine allows me to get more information on a book like genre and type.
+* `sort`: Sort allows me to sort the books based on their publication year.
+* `facet`: Facets allows me to only get books back.
+* `page`: With page and can navigate trough all the available pages.
 
 ```js
 client.get('search', {
@@ -248,8 +253,7 @@ client.get('search', {
   q: 'Wereld-Oorlog',
   sort: 'year',
   facet: 'type(book)',
-  librarian: true,
-  page: 1 // 1 t/m 339
+  page: 1
 })
 ```
 After we got a workshop from [Laurens](https://github.com/Razpudding) on how to access and structure the data we got from the API, I edited the code I wrote earlier to a function that would only give me back the data that I would need for my visualisation:
