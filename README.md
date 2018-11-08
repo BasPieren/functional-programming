@@ -275,6 +275,8 @@ function getData(data) {
 ```
 The function maps over the data from the OBA API and saves it inside a new array called dataStore. For every book it returns a title, year, author, genre, description, pages and kind. For every property I looks if there is a value and, if there is none, replace it with something else. I also made sure that the year and pages would be parsed to be a number instead of a string.
 
+By manually changing the page number I found out that there are 339 pages with books. The books that I need where on page 329 till 338. So I tried to narrow down the result by using the `pubYearRange` facet but I couldn't get I to work.
+
 ## Observable 📊
 After I got back all the data that I needed started work on my visualisation in d3.
 
