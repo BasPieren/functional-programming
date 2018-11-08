@@ -26,12 +26,12 @@ This is the repo for my functional programming project.
 This is a list of things in want to do in this project.
 - [X] Git, npm, and d3 are used; the project runs without errors; data is loaded with d3; there is a representation of data.
 - [X] Data is rendered with d3; interpreting the representation is easier that interpreting the data itself.
-- [ ] d3 is used to clean data and make a dynamic representation; data is functionally transformed.
+- [X] d3 is used to clean data and make a dynamic representation; data is functionally transformed.
 - [ ] Representation and use of d3 go beyond an example: there are demonstrable additions like a well-chosen scale.
 - [ ] The way the student applies subject matter is more advanced than what they were taught in class; let’s switch places.
 
 ## Description 📝
-During this project I used d3 to make a clean data presentation using the OBA API. I did research based on the data which I used to formulate a research question, sub-questions and hypothesis.
+During this project I used d3 to make a clean data presentation using the data we got from the OBA API. I did research based on the data which I used to formulate a research question, sub-questions and hypothesis.
 
 ## Installing 🔍
 To install this application enter the following into your terminal:
@@ -48,6 +48,7 @@ npm install
 ### Packages and technologies
 This project makes use of the following packages and technologies:
 
+* [OBA API](https://zoeken.oba.nl/api/v1/)
 * [node-oba-api](https://github.com/rijkvanzanten/node-oba-api)
 * [dotenv](https://www.npmjs.com/package/dotenv)
 
@@ -130,10 +131,10 @@ First after getting back the data from the [OBA API](https://zoeken.oba.nl/api/v
 </details>
 
 <br>
-I went looking for variables that I could use for my project. I expected to find properties like: title, writer, genre and publication date of books. Quickly I saw that there was a lot of excess data that was not really needed.
+I started to look for variables that I could use for my project. I expected to find properties for each book like a title, writer, genre and publication date of books. Quickly I saw that there was a lot of excess data that was not really needed.
 
 ### Research questions
-After exploring the data I came up with the following research questions:
+After looking through the data I came up with the following research questions:
 
 1.	Were fewer books written after the year 2000?
 2.	Has the number of audiobooks grown in the past 10 years?
@@ -141,7 +142,7 @@ After exploring the data I came up with the following research questions:
 4.	Have there been fewer books written about faith / religion through the course of the years?
 5.	Do men and women often continue to write within the same kind of genres?
 
-These where things I thought that would be interesting to know and that was based on variables that could be found inside the data. Out of all these questions I choose the one that I found the most interesting:
+These where things I thought that would be interesting to know and that could be found inside the data by looking at the property values. Out of all these questions I choose the one that I found the most interesting:
 
 **Have more "cheerful" genres been used in the period after 1940-1945?**
 
@@ -149,18 +150,26 @@ But I still found the part about the "cheerful genres" to still be a bit to abst
 
 **Have there been noticeable changes in genres that have been used in the period after World War 2?**
 
-_EDIT:_ After I went through the sorted data to find patterns I noticed that a lot of books didn't have a genre. Almost all of them did have a description so I decided to focus on that instead of the genre. So I also changed my research question:
+_EDIT 2-11-2018:_ After I went through the sorted data to find patterns I noticed that a lot of books didn't have a genre. Almost all of them did have a description so I decided to focus on that instead of the genre. So I also changed my research question:
 
 **Have there been noticeable changes in the sort of books that have been written in the period after World War 2?**
 
+_EDIT 5-11-2018:_ When I started to sketch I found out that I was not very easy to make a visualisation based on the description of books. I gravitated more to using the publication date in combination with the number of pages of each book. So I changed my research question yet again:
+
+**Have there been noticeable changes in the number of books and the number of pages that have been written in the period after World War 2?**
+
 ### Hypothesis
-After I formulated my research questions I came up with a hypothesis that I wanted to test.
+After I formulated my research questions I came up with a hypothesis that I wanted to test:
 
 - **"After World War 2 books have drastically changed in genre to reflect the time period."**
 
-_EDIT:_ When I changed my research question I also changed my hypothesis:
+_EDIT 2-11-2018:_ When I changed my research question I also changed my hypothesis:
 
 - **"After World War 2 books have drastically changed in subjects to reflect the time period."**
+
+_EDIT 5-11-2018:_ When I changed my research question (again) I also changed my hypothesis (again):
+
+- **"After World War 2 less books have been published to reflect the time period."**
 
 ### Sub-questions
 After I finalized my research question and hypothesis I started to write down sub-questions about things I wanted to know about:
@@ -173,19 +182,19 @@ After I finalized my research question and hypothesis I started to write down su
 - What where books about after World War 2?
 - What where books about during World War 2?
 
-I wanted to focus on the period during and after World War 2 so that I would have a base that I could use to compare my hypothesis to.
+I wanted to focus on the periods just before, during and after World War 2 so that I would have a base that I could use to compare my hypothesis to.
 
 ### Variables
 After I wrote down my sub-questions I started to look at the properties inside the data that I thought I would need to find patterns. I came up with the following:
 
-- Titel
+- Title
 - Author
 - Format
 - Publication Year
 - Pages
 - Subjects
 
-I made sure that I would only get back these variables when searching trough the data.
+I made sure that I would only get back these variables when searching trough the data. To see how I did that look at the [Transform Data](#Transform-data-) chapter.
 
 ### Findings
 The first thing that I noticed when looking through books from before World War 2 is that a lot are about the aftermath of World War 1 and especially about the individual stories of soldiers. Descriptions for example are (in Dutch):
@@ -221,7 +230,7 @@ A lot of books where written in 1945 detailing different events in World War 2. 
 This are some sketches I made after doing my research do see what kind of visualisation I wanted too make.
 
 ![Sketch Photo](images/Sketch1.jpg)
-> I wanted to make a timeline that would showcase all the books that were written during 1935 and 1950 that had something to do with the world wars. Every dot would represent a book. This way you can get an idea of how many books were written, for example, during the start of world war 2 in 1940.
+> My idea was to make a timeline that would showcase all the books that were written during 1935 and 1950 that had something to do with the world wars, with the second world war in particular. Every dot would represent a book. This way you can get an idea of how many books were written, for example, during the start of world war 2 in 1940.
 
 ## Transform data 🛠
 Here I will explain the important parts on how I transformed my data.
@@ -242,7 +251,7 @@ client.get('search', {
   page: 1 // 1 t/m 339
 })
 ```
-After we got a workshop from [Laurens](https://github.com/Razpudding) on how to access and structure the data we got from the API, I wrote a function that would only give me back the parameters that I would need for my visualisation:
+After we got a workshop from [Laurens](https://github.com/Razpudding) on how to access and structure the data we got from the API, I edited the code I wrote earlier to a function that would only give me back the data that I would need for my visualisation:
 
 ```js
 function getData(data) {
@@ -264,9 +273,10 @@ function getData(data) {
   // END USE OF SOURCE
 }
 ```
-The function maps over the data from the OBA API and saves it inside a new array called dataStore. For every book it returns a title, year, author, genre, description, pages and kind. For every property I look if there is a value and if not replace it with something else. I also made sure that the year and pages would be parsed to be a number instead of a string.
+The function maps over the data from the OBA API and saves it inside a new array called dataStore. For every book it returns a title, year, author, genre, description, pages and kind. For every property I looks if there is a value and, if there is none, replace it with something else. I also made sure that the year and pages would be parsed to be a number instead of a string.
 
 ## Observable 📊
+After I got back all the data that I needed started work on my visualisation in d3.
 
 [Link to the d3 data visualisation in observable.](https://beta.observablehq.com/d/12cd984ea225e25f)
 

@@ -28,10 +28,10 @@ const client = new OBA({
 
 // Example search to the word 'rijk' sorted by title:
 client.get('search', {
+  refine: true,
   q: 'Wereld-Oorlog',
   sort: 'year',
   facet: 'type(book)',
-  refine: true,
   librarian: true,
   page: 329 // 1 t/m 339
 })
@@ -49,8 +49,8 @@ client.get('search', {
     // START USE OF SOURCE: Martijn Reeuwijk & Laurens
     let dataStore = data.aquabrowser.results.result.map(e => {
       return {
-  			TITEL: e.titles? e.titles['short-title'].$t : "No titel".toUpperCase(),
-  			YEAR: e.publication? parseInt(e.publication.year.$t, 10)
+        TITLE: e.titles? e.titles['short-title'].$t : "No titel".toUpperCase(),
+        YEAR: e.publication? parseInt(e.publication.year.$t, 10)
           : "No year".toUpperCase(),
         AUTHOR: e.authors? e.authors['main-author'].$t : "No writer".toUpperCase(),
         GENRE: e.genres? e.genres.genre.$t : "No genre".toUpperCase(),
@@ -58,7 +58,7 @@ client.get('search', {
         PAGES: e.description? parseInt(e.description['physical-description'].$t.match(/\d+/g).map(Number), 10)
           : 0,
         KIND: e.formats? e.formats.format.$t: "No kind".toUpperCase(),
-  		}
+      }
     })
     console.log(dataStore)
     // END USE OF SOURCE
