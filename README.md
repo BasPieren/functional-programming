@@ -133,7 +133,6 @@ First after getting the data back from the [OBA API](https://zoeken.oba.nl/api/v
 
 > Thanks to [@DanielvandeVelde](https://github.com/DanielvandeVelde/) for writing this down.
 
-<br>
 I started to look for properties that I could use for my project. I expected to find properties for each book like a title, writer, genre and publication date of books. Quickly I saw that there was a lot of excess data that was not really needed.
 
 ### Research questions
