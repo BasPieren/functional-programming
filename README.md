@@ -130,6 +130,7 @@ First after getting the data back from the [OBA API](https://zoeken.oba.nl/api/v
   </ul>
 </ul>
 </details>
+
 > Thanks to [@DanielvandeVelde](https://github.com/DanielvandeVelde/) for writing this down.
 
 <br>
