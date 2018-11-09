@@ -286,7 +286,7 @@ By manually changing the page number I found out that there are 339 pages with b
 ## Observable 📊
 After I got back all the data that I needed started work on my visualisation in d3.
 
-[Link to the d3 data visualisation in observable.](https://beta.observablehq.com/d/12cd984ea225e25f)
+[Link to the d3 data visualisation in observable.](https://beta.observablehq.com/@baspieren/functional-programming-d3-scatterplot)
 
 ## Sources 📚
 
